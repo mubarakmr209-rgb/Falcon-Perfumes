@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function bumpCartBadge(){
     document.querySelectorAll("[data-cart-count]").forEach(el => {
       el.classList.remove("bump");
-      void el.offsetWidth; // restart animation
+      void el.offsetWidth; 
       el.classList.add("bump");
     });
   }
