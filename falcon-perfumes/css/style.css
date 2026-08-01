@@ -1,10 +1,10 @@
-/* =========================================================
+
    FALCON PERFUMES — Design System
    Display: Cormorant Garamond | Body/UI: Jost
    Signature motif: the "wing cut" — an asymmetric clipped
    corner echoing a falcon's wing, used on cards, buttons,
    and section dividers instead of ordinary rounded corners.
-   ========================================================= */
+  
 
 :root{
   --ink: #0b0e14;
@@ -75,7 +75,7 @@ h1,h2,h3,h4,.display{
   *{ animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
 }
 
-/* ---------- Top utility bar ---------- */
+
 .topbar{
   background: var(--gold);
   color: var(--ink);
@@ -86,7 +86,7 @@ h1,h2,h3,h4,.display{
   font-weight: 500;
 }
 
-/* ---------- Navbar ---------- */
+
 .fp-navbar{
   background: rgba(11,14,20,.86);
   backdrop-filter: blur(10px);
@@ -174,7 +174,7 @@ h1,h2,h3,h4,.display{
 .search-fp:focus{ background: var(--panel-2); color: var(--cream); border-color: var(--gold-dim); box-shadow: none; }
 .search-fp::placeholder{ color: var(--muted-2); }
 
-/* ---------- Wing-cut shape utility ---------- */
+
 .wing-cut{
   clip-path: polygon(0 0, calc(100% - var(--wing-cut)) 0, 100% var(--wing-cut), 100% 100%, 0 100%);
 }
@@ -182,7 +182,7 @@ h1,h2,h3,h4,.display{
   clip-path: polygon(var(--wing-cut) 0, 100% 0, 100% 100%, 0 100%, 0 var(--wing-cut));
 }
 
-/* ---------- Buttons ---------- */
+
 .btn-fp{
   background: var(--cream);
   color: var(--ink);
@@ -228,7 +228,7 @@ h1,h2,h3,h4,.display{
 .btn-fp-gold:hover{ background: var(--gold-light); transform: translateY(-1px); }
 .btn-fp-gold:disabled{ opacity: .5; transform: none; cursor: not-allowed; }
 
-/* ---------- Hero ---------- */
+
 .hero{
   position: relative;
   min-height: 88vh;
@@ -295,7 +295,7 @@ h1,h2,h3,h4,.display{
 .bottle-svg{ position:relative; width: 100px; filter: drop-shadow(0 30px 40px rgba(0,0,0,.5)); animation: float 5s ease-in-out infinite; }
 @keyframes float{ 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(-14px);} }
 
-/* Real product photography in the hero (replaces oversized/undersized illustrations) */
+
 .bottle-img{
   position: relative;
   width: min(300px, 70%);
@@ -311,7 +311,7 @@ h1,h2,h3,h4,.display{
   .bottle-img{ width: min(260px, 60%); }
 }
 
-/* ---------- Section framing ---------- */
+
 .section{ padding: 96px 0; }
 .section-tight{ padding: 64px 0; }
 .section-divider{
@@ -323,7 +323,7 @@ h1,h2,h3,h4,.display{
 .section-head{ text-align:center; max-width: 620px; margin: 0 auto 52px; }
 .section-head h2{ font-size: clamp(1.8rem, 3vw, 2.6rem); margin-top: 10px; }
 
-/* ---------- Category / product / brand cards ---------- */
+
 .cat-card{
   background: var(--panel);
   border: 1px solid var(--line);
@@ -392,7 +392,7 @@ h1,h2,h3,h4,.display{
 .add-cart-btn:hover{ background: var(--gold); border-color: var(--gold); color: var(--ink); }
 .add-cart-btn.added{ background: var(--success); border-color: var(--success); color: var(--ink); }
 
-/* filter pills */
+
 .filter-pill{
   background: transparent;
   border: 1px solid var(--line);
@@ -409,7 +409,7 @@ h1,h2,h3,h4,.display{
 .fade-item{ transition: opacity .3s ease, transform .3s ease; }
 .fade-item.hide{ display: none; }
 
-/* reveal-on-scroll */
+
 .reveal{ opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.in{ opacity: 1; transform: none; }
 
@@ -420,7 +420,7 @@ h1,h2,h3,h4,.display{
 .trust-item strong{ display:block; font-size: .88rem; }
 .trust-item span{ display:block; font-size:.76rem; color: var(--muted); }
 
-/* brand card */
+
 .brand-card{
   background: var(--panel);
   border: 1px solid var(--line);
@@ -434,7 +434,7 @@ h1,h2,h3,h4,.display{
 .brand-word{ font-family: var(--serif); font-size: 1.6rem; letter-spacing: .04em; color: var(--cream); }
 .brand-tag{ font-size: .68rem; letter-spacing:.22em; text-transform:uppercase; color: var(--muted-2); }
 
-/* pagination */
+
 .fp-pagination{ display:flex; gap:8px; justify-content:center; align-items:center; }
 .fp-page-btn{
   width: 40px; height: 40px;
@@ -448,7 +448,7 @@ h1,h2,h3,h4,.display{
 .fp-page-btn:hover{ border-color: var(--gold-dim); color: var(--cream); }
 .fp-page-btn.active{ background: var(--gold); border-color: var(--gold); color: var(--ink); font-weight:700; }
 
-/* ---------- Page header (inner pages) ---------- */
+
 .page-head{
   background: var(--panel);
   border-bottom: 1px solid var(--line);
@@ -470,7 +470,7 @@ h1,h2,h3,h4,.display{
 .breadcrumb-fp a:hover{ color: var(--gold); }
 .breadcrumb-fp .sep{ margin: 0 8px; color: var(--muted-2); }
 
-/* ---------- Auth (login) ---------- */
+
 .auth-shell{ min-height: 100vh; display:flex; }
 .auth-side{
   flex: 1.1;
@@ -535,7 +535,7 @@ h1,h2,h3,h4,.display{
 
 .wing-illustration{ width: min(70%, 320px); position:relative; }
 
-/* ---------- Contact page ---------- */
+
 .contact-panel{ background: var(--panel); border: 1px solid var(--line); padding: 34px; height: 100%; }
 .contact-detail{ display:flex; gap:14px; margin-bottom: 20px; }
 .contact-detail svg{ width: 20px; height:20px; color: var(--gold); flex-shrink:0; margin-top:2px; }
@@ -578,7 +578,7 @@ textarea.fp-input{ padding-left: 14px; min-height: 120px; resize: vertical; }
 .toast-fp.show{ transform: translateY(0); opacity:1; }
 .toast-fp svg{ width: 18px; height:18px; color: var(--gold); }
 
-/* ---------- Footer ---------- */
+
 .fp-footer{ background: var(--panel); border-top: 1px solid var(--line); padding: 64px 0 24px; }
 .fp-footer h5{ font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; color: var(--cream); margin-bottom: 18px; }
 .fp-footer p, .fp-footer a{ color: var(--muted); font-size: .88rem; }
@@ -587,7 +587,7 @@ textarea.fp-input{ padding-left: 14px; min-height: 120px; resize: vertical; }
 .fp-footer a:hover{ color: var(--gold-light); }
 .footer-bottom{ border-top: 1px solid var(--line); margin-top: 46px; padding-top: 22px; font-size: .78rem; color: var(--muted-2); }
 
-/* ---------- Responsive ---------- */
+
 @media (max-width: 991.98px){
   .auth-side{ display:none; }
   .hero{ text-align:center; }
