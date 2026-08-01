@@ -1,4 +1,4 @@
-/* =========================================================
+
    FALCON PERFUMES — script.js
    Features implemented:
    1. Dynamic Content Updates — brand/category filtering
@@ -7,11 +7,10 @@
    4. Smooth Scrolling — nav anchor links
    5. Event Handling — add-to-cart, hover/tab, toasts
    6. Custom Animations — scroll reveal, cart bump, fades
-   ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* ---------------- Cart state (persisted) ---------------- */
+ 
   const CART_KEY = "falcon_cart_count";
   const getCartCount = () => parseInt(localStorage.getItem(CART_KEY) || "0", 10);
   const setCartCount = (n) => localStorage.setItem(CART_KEY, String(n));
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ---------------- Toast helper ---------------- */
+
   let toastTimer;
   function showToast(message){
     let toast = document.querySelector(".toast-fp");
@@ -47,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toastTimer = setTimeout(() => toast.classList.remove("show"), 2600);
   }
 
-  /* ---------------- 5. Event Handling: Add to cart ---------------- */
+  
   document.querySelectorAll(".add-cart-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       const name = btn.closest(".product-card, .product-body")?.querySelector(".product-name")?.textContent?.trim() || "Item";
@@ -69,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* ---------------- 2. Interactive Image Slider (Hero) ---------------- */
+
   const slider = document.querySelector("[data-hero-slider]");
   if(slider){
     const slides = [...slider.querySelectorAll(".hero-slide")];
@@ -107,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     restartAuto();
   }
 
-  /* ---------------- 1. Dynamic Content: Category / Brand filter ---------------- */
+  
   const filterBar = document.querySelector("[data-filter-bar]");
   if(filterBar){
     const pills = [...filterBar.querySelectorAll(".filter-pill")];
@@ -125,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ---------------- 4. Smooth Scrolling ---------------- */
+ 
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", (e) => {
       const id = link.getAttribute("href");
@@ -139,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* ---------------- 6. Custom Animation: reveal on scroll ---------------- */
+
   const revealEls = document.querySelectorAll(".reveal");
   if("IntersectionObserver" in window && revealEls.length){
     const io = new IntersectionObserver((entries) => {
@@ -155,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
     revealEls.forEach(el => el.classList.add("in"));
   }
 
-  /* ---------------- 3. Form Validation: real-time feedback ---------------- */
+  
   function setFieldState(input, hintEl, valid, message){
     input.classList.toggle("is-invalid", !valid);
     input.classList.toggle("is-valid", valid);
@@ -188,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setFieldState(input, hint, true, "Strong enough"); return true;
   }
 
-  // Login form
+  
   const loginForm = document.querySelector("#loginForm");
   if(loginForm){
     const email = loginForm.querySelector("#loginEmail");
@@ -204,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Signup form
+  
   const signupForm = document.querySelector("#signupForm");
   if(signupForm){
     const name = signupForm.querySelector("#signupName");
@@ -223,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Contact form
+  
   const contactForm = document.querySelector("#contactForm");
   if(contactForm){
     const cname = contactForm.querySelector("#contactName");
@@ -245,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ---------------- Password show/hide toggle ---------------- */
+  
   document.querySelectorAll(".fp-toggle-pass").forEach(btn => {
     btn.addEventListener("click", () => {
       const input = btn.previousElementSibling;
@@ -257,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* ---------------- Auth tab switch (Login / Sign up) ---------------- */
+  
   const authTabs = document.querySelectorAll("[data-auth-tab]");
   if(authTabs.length){
     authTabs.forEach(tab => {
@@ -271,7 +270,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ---------------- Navbar shrink on scroll (subtle event handling) ---------------- */
+ 
   const nav = document.querySelector(".fp-navbar");
   if(nav){
     window.addEventListener("scroll", () => {
@@ -279,6 +278,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ---------------- Year in footer ---------------- */
+ 
   document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());
 });
