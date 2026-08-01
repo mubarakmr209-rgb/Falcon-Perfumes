@@ -1,4 +1,4 @@
-// Shared footer injected on every page so the footer only needs to be maintained once.
+
 document.addEventListener("DOMContentLoaded", () => {
   const mount = document.querySelector("#site-footer");
   if(!mount) return;
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     </div>
   `;
-  // re-run the year fill in case DOMContentLoaded already fired in script.js
+ 
   const y = mount.querySelector("[data-year]");
   if(y) y.textContent = new Date().getFullYear();
 });
