@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Falcon Perfumes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">FREE DELIVERY ON ORDERS OVER $50 &nbsp;•&nbsp; 100% AUTHENTIC PERFUMES</div>
+
+<nav class="navbar navbar-expand-lg fp-navbar">
+  <div class="container">
+    <a class="navbar-brand fp-brand" href="index.html">
+      <svg class="fp-wingmark" viewBox="0 0 48 48" fill="none">
+        <path d="M24 4C18 14 6 18 4 20c6 0 12 2 16 8 4-6 10-8 16-8-2-2-14-6-16-16Z" stroke="#c9a24b" stroke-width="1.5" fill="rgba(201,162,75,.12)"/>
+        <path d="M24 20v24" stroke="#c9a24b" stroke-width="1.5"/>
+      </svg>
+      <span>FALCON<small>PERFUMES</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fpNav" style="border-color:#262e3d;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="fpNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="new-arrivals.html">New Arrivals</a></li>
+        <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+        <input type="search" class="search-fp d-none d-md-block" placeholder="Search perfumes…">
+        <a href="login.html" class="fp-icon-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 21a8 8 0 10-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+          <span class="d-none d-lg-inline">Login</span>
+        </a>
+        <a href="new-arrivals.html" class="fp-icon-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+          <span data-cart-count>0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="container position-relative">
+    <span class="eyebrow">We'd Love To Hear From You</span>
+    <h1 class="mt-2">Contact Us</h1>
+    <div class="breadcrumb-fp mt-2"><a href="index.html">Home</a><span class="sep">/</span>Contact Us</div>
+  </div>
+</header>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Get in touch form -->
+      <div class="col-lg-5 reveal">
+        <div class="contact-panel h-100">
+          <h3 class="mb-2" style="font-size:1.4rem;">Get in Touch</h3>
+          <p class="text-muted-fp small mb-4">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+          <form id="contactForm" novalidate>
+            <div class="fp-field">
+              <label for="contactName">Your Name</label>
+              <div class="fp-input-wrap no-icon">
+                <input type="text" class="fp-input" id="contactName" placeholder="Jane Doe" required>
+              </div>
+              <div class="field-hint"></div>
+            </div>
+            <div class="fp-field">
+              <label for="contactEmail">Your Email</label>
+              <div class="fp-input-wrap no-icon">
+                <input type="email" class="fp-input" id="contactEmail" placeholder="you@example.com" required>
+              </div>
+              <div class="field-hint"></div>
+            </div>
+            <div class="fp-field">
+              <label for="contactSubject">Subject</label>
+              <div class="fp-input-wrap no-icon">
+                <input type="text" class="fp-input" id="contactSubject" placeholder="How can we help?">
+              </div>
+            </div>
+            <div class="fp-field">
+              <label for="contactMessage">Your Message</label>
+              <textarea class="fp-input" id="contactMessage" rows="4" placeholder="Write your message here…" required></textarea>
+              <div class="field-hint"></div>
+            </div>
+            <button type="submit" class="btn-fp-gold">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Our details -->
+      <div class="col-lg-3 reveal">
+        <div class="contact-panel h-100">
+          <h3 class="mb-4" style="font-size:1.4rem;">Our Details</h3>
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 3a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c1 .3 2 .5 3 .6a2 2 0 011.7 2z"/></svg>
+            <div><strong>Phone</strong><span>+94 77 123 4567</span></div>
+          </div>
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg>
+            <div><strong>Email</strong><span>info@falconperfumes.com</span></div>
+          </div>
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div><strong>Hours</strong><span>Sat–Thu: 9:00 AM – 9:00 PM<br>Sunday: 10:00 AM – 6:00 PM</span></div>
+          </div>
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><strong>Address</strong><span>No. 123, Main Street,<br>Colombo, Sri Lanka</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location -->
+      <div class="col-lg-4 reveal">
+        <div class="contact-panel h-100">
+          <h3 class="mb-4" style="font-size:1.4rem;">Our Location</h3>
+          <div class="map-box mb-4">
+            <svg viewBox="0 0 300 210" preserveAspectRatio="none">
+              <rect width="300" height="210" fill="#171d28"/>
+              <path d="M0 60h300M0 110h300M0 160h300" stroke="#262e3d" stroke-width="2"/>
+              <path d="M60 0v210M150 0v210M230 0v210" stroke="#262e3d" stroke-width="2"/>
+              <path d="M0 90h300" stroke="#3d4e63" stroke-width="4"/>
+              <path d="M150 0v210" stroke="#3d4e63" stroke-width="4"/>
+            </svg>
+            <svg class="map-pin" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="3" fill="#0b0e14"/></svg>
+          </div>
+          <h3 class="mb-3" style="font-size:1.1rem;">Follow Us</h3>
+          <div class="social-row">
+            <a href="#" class="social-fp" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.5-3H13.5V8.5c0-.9.25-1.5 1.55-1.5H16.5V4.3c-.28-.04-1.2-.12-2.28-.12-2.26 0-3.8 1.38-3.8 3.92V10.5H8v3h2.42V21z"/></svg></a>
+            <a href="#" class="social-fp" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="#" class="social-fp" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.6 14.2c-.24.7-1.4 1.3-1.9 1.4-.5.1-1.1.15-3.5-.75-3-1.15-4.9-4.15-5-4.35-.15-.2-1.2-1.6-1.2-3s.75-2.15 1-2.4c.25-.25.55-.35.75-.35h.5c.15 0 .35 0 .55.4.24.5.75 1.75.8 1.9.05.15.1.3 0 .5-.1.2-.15.3-.3.45l-.4.5c-.15.15-.3.3-.15.6.15.3.7 1.2 1.5 1.9 1.05.95 1.9 1.25 2.2 1.4.3.15.5.1.65-.1.2-.2.7-.8.9-1.1.2-.3.4-.25.65-.15l1.7.8c.2.1.4.15.4.35.05.2.05.9-.2 1.6z"/></svg></a>
+            <a href="#" class="social-fp" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M15 3c.3 1.9 1.6 3.4 3.6 3.7v2.6c-1.3 0-2.5-.4-3.6-1.1v6.5a5.3 5.3 0 11-4.6-5.3v2.7a2.6 2.6 0 102 2.5V3z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="fp-footer" id="site-footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

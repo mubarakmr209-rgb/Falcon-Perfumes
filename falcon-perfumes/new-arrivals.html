@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Arrivals — Falcon Perfumes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">FREE DELIVERY ON ORDERS OVER $50 &nbsp;•&nbsp; 100% AUTHENTIC PERFUMES</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fp-navbar">
+  <div class="container">
+    <a class="navbar-brand fp-brand" href="index.html">
+      <svg class="fp-wingmark" viewBox="0 0 48 48" fill="none">
+        <path d="M24 4C18 14 6 18 4 20c6 0 12 2 16 8 4-6 10-8 16-8-2-2-14-6-16-16Z" stroke="#c9a24b" stroke-width="1.5" fill="rgba(201,162,75,.12)"/>
+        <path d="M24 20v24" stroke="#c9a24b" stroke-width="1.5"/>
+      </svg>
+      <span>FALCON<small>PERFUMES</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fpNav" style="border-color:#262e3d;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="fpNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="new-arrivals.html">New Arrivals</a></li>
+        <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+        <input type="search" class="search-fp d-none d-md-block" placeholder="Search perfumes…">
+        <a href="login.html" class="fp-icon-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 21a8 8 0 10-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+          <span class="d-none d-lg-inline">Login</span>
+        </a>
+        <a href="new-arrivals.html" class="fp-icon-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+          <span data-cart-count>0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEAD -->
+<header class="page-head">
+  <div class="container position-relative">
+    <span class="eyebrow">Fresh This Week</span>
+    <h1 class="mt-2">New Arrivals</h1>
+    <div class="breadcrumb-fp mt-2"><a href="index.html">Home</a><span class="sep">/</span>New Arrivals</div>
+  </div>
+</header>
+
+<!-- FILTER + GRID -->
+<section class="section-tight">
+  <div class="container">
+    <div class="d-flex flex-wrap gap-2 justify-content-center mb-5 reveal" data-filter-bar>
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="men">Men</button>
+      <button class="filter-pill" data-filter="women">Women</button>
+      <button class="filter-pill" data-filter="unisex">Unisex</button>
+    </div>
+
+    <div class="row g-4" id="productGrid">
+
+      <div class="col-6 col-lg-3 fade-item reveal" data-category="men">
+        <div class="product-card">
+          <div class="product-media">
+            <span class="product-badge">New</span>
+            <img src="https://images.pexels.com/photos/2814832/pexels-photo-2814832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Afnan 9PM perfume bottle" loading="lazy">
+          </div>
+          <div class="product-body">
+            <div class="product-brand">Afnan</div>
+            <div class="product-name">Afnan 9PM</div>
+            <div class="product-note">Eau de Parfum</div>
+            <div class="product-price">$45.00</div>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 fade-item reveal" data-category="women">
+        <div class="product-card">
+          <div class="product-media">
+            <span class="product-badge">New</span>
+            <img src="https://images.pexels.com/photos/1961788/pexels-photo-1961788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Lattafa Khamrah perfume bottle" loading="lazy">
+          </div>
+          <div class="product-body">
+            <div class="product-brand">Lattafa</div>
+            <div class="product-name">Lattafa Khamrah</div>
+            <div class="product-note">Eau de Parfum</div>
+            <div class="product-price">$40.00</div>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 fade-item reveal" data-category="unisex">
+        <div class="product-card">
+          <div class="product-media">
+            <span class="product-badge">Popular</span>
+            <img src="https://images.pexels.com/photos/12402362/pexels-photo-12402362.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Armaf Club De Nuit perfume bottle" loading="lazy">
+          </div>
+          <div class="product-body">
+            <div class="product-brand">Armaf</div>
+            <div class="product-name">Armaf Club De Nuit</div>
+            <div class="product-note">Eau de Parfum</div>
+            <div class="product-price">$50.00</div>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 fade-item reveal" data-category="men">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.pexels.com/photos/3785784/pexels-photo-3785784.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Rasasi Hawas perfume bottle" loading="lazy">
+          </div>
+          <div class="product-body">
+            <div class="product-brand">Rasasi</div>
+            <div class="product-name">Rasasi Hawas</div>
+            <div class="product-note">Eau de Parfum</div>
+            <div class="product-price">$42.00</div>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 fade-item reveal" data-category="men">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.pexels.com/photos/965992/pexels-photo-965992.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Afnan Supremacy perfume bottle" loading="lazy">
+          </div>
+          <div class="product-body">
+            <div class="product-brand">Afnan</div>
+            <div class="product-name">Afnan Supremacy</div>
+            <div class="product-note">Eau de Parfum</div>
+            <div class="product-price">$45.00</div>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 fade-item reveal" data-category="women">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.pexels.com/photos/32566124/pexels-photo-32566124.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Lattafa Asad perfume bottle" loading="lazy">
+          </div>
+          <div class="product-body">
+            <div class="product-brand">Lattafa</div>
+            <div class="product-name">Lattafa Asad</div>
+            <div class="product-note">Eau de Parfum</div>
+            <div class="product-price">$40.00</div>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 fade-item reveal" data-category="unisex">
+        <div class="product-card">
+          <div class="product-media">
+            <img src="https://images.pexels.com/photos/965730/pexels-photo-965730.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Maison Alhambra Jean Lowe perfume bottle" loading="lazy">
+          </div>
+          <div class="product-body">
+            <div class="product-brand">Maison Alhambra</div>
+            <div class="product-name">Maison Alhambra Jean Lowe</div>
+            <div class="product-note">Eau de Parfum</div>
+            <div class="product-price">$30.00</div>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3 fade-item reveal" data-category="unisex">
+        <div class="product-card">
+          <div class="product-media">
+            <span class="product-badge">New</span>
+            <img src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=600" alt="RIFFS Iconic perfume bottle" loading="lazy">
+          </div>
+          <div class="product-body">
+            <div class="product-brand">RIFFS</div>
+            <div class="product-name">RIFFS Iconic</div>
+            <div class="product-note">Eau de Parfum</div>
+            <div class="product-price">$30.00</div>
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="fp-pagination mt-5">
+      <button class="fp-page-btn" aria-label="Previous page">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="fp-page-btn active">1</button>
+      <button class="fp-page-btn">2</button>
+      <button class="fp-page-btn">3</button>
+      <button class="fp-page-btn" aria-label="Next page">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<footer class="fp-footer" id="site-footer"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>
