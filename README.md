@@ -50,11 +50,3 @@ falcon-perfumes-submission/
 | `users` | Registered customer credentials and account creation date. |
 | `messages` | Contact-form submissions. |
 | `perfumes` | Falcon Perfumes product catalogue. |
-
-## GitHub submission
-
-Create a GitHub repository, upload the entire project folder (including `database.sql` and `README.md`), then replace this line with your repository URL before submitting to LMS:
-
-`https://github.com/<your-username>/falcon-perfumes`
-
-Never commit real production database passwords. The included local XAMPP defaults are for development only.
