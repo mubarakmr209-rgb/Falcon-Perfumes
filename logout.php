@@ -1,0 +1,1 @@
+<?php require '../includes/functions.php';if(!post()){http_response_code(405);header('Allow: POST');exit('Use the sign-out button in your account.');}verify_csrf();end_session();redirect('auth/login.php');
